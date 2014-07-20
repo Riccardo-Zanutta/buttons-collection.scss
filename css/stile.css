@@ -143,6 +143,11 @@ footer {
   color: #ecf0f1;
 }
 
+@media only screen and (max-width: 601px) {
+  h1.gigantic {
+    font-size: 60px;
+  }
+}
 /* Buttons */
 .btn, .btn:link, .btn:visited {
   font-family: "Lato", helvetica, arial, sans-serif;

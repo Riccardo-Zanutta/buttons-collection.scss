@@ -125,7 +125,8 @@
         }
     }
 }
-@mixin blockbreak ($class: "", $class2: -flat, $class3: -dark, $class4: -light) {
+// makes full-width buttons on mobile devices.
+@mixin blockbreak ($class: "") {
     @media only screen and (max-width: 500px) {
         .btn#{$class} {
             display: block;

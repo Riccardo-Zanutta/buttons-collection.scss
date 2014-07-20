@@ -106,3 +106,8 @@ footer {
     border-top: 3px solid $grey-darker;
     color: $clouds;
 }
+@media only screen and (max-width: 601px) {
+    h1.gigantic {
+        font-size: 60px;
+    }
+}
