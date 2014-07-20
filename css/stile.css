@@ -136,17 +136,13 @@ h2 .push-up {
   margin-bottom: 20px;
 }
 
-footer {
-  width: 100%;
-  background: #2b2e33;
-  padding: 5px 0;
-  border-top: 3px solid #434a54;
-  color: #ecf0f1;
-}
-
 @media only screen and (max-width: 601px) {
   h1.gigantic {
     font-size: 60px;
+  }
+
+  .fa {
+    font-size: 14px;
   }
 }
 /* Buttons */
