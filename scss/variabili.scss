@@ -1,0 +1,44 @@
+// Base Colors.
+
+// Grey variations.
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+$concrete: #95a5a6;
+$asbestos: #7f8c8d;
+$grey-dark: #656d78;
+$grey-darker: #434a54;
+
+// Flat UI Palette.
+$dark-blue: #34495e;
+$light-blue: #3498db;
+$amethist: #9b59b6;
+$emerald: #2ecc71;
+$sea-green: #1abc9c;
+$sun-flower: #f1c40f;
+$orange: #f39c12;
+$carrot: #e67e22;
+$red: #e74c3c;
+
+// Global styles colors.
+$body-bg:                rgba(0, 0, 0, 0) !default;
+$text-color:             darken($grey-darker, 10%) !default;
+$link-color:             $light-blue !default;
+$selection-bg:           #b3d4fc;
+$selection-color:        #fff;
+
+// Typography.
+$font-family-sans-serif:  "Lato", helvetica, arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-size-base:          16px !default;
+$line-height:             1.42857143 !default; 
+
+$button-secondary-color:      #000 !default;
+$btn-secondary-bg:            #fff !default;
+$btn-secondary-border:        darken($btn-secondary-bg, 5%) !default;
+
+$button-something-color:      #000 !default;
+$btn-something-bg:            #fff !default;
+$btn-something-border:        darken($btn-something-bg, 5%) !default;

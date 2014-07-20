@@ -1,0 +1,108 @@
+/* Base */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 2880px;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-rendering: optimizeLegibility !important;
+}
+body {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    color: $text-color;
+    background-color: $body-bg;
+}
+
+// Selection colors
+
+::selection {
+    background: $selection-bg;
+    color: $selection-color;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: $selection-bg;
+    color: $selection-color;
+    text-shadow: none;
+}
+
+// Typography
+
+.gigantic {
+    font-size: 100px;
+    line-height: 1.09;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: darken($carrot, 10%);
+    text-decoration: none;
+    
+    &:link, &:visited {
+        @extend a;
+    }
+    
+    &:hover, &:focus {
+      text-decoration: none;
+      color: darken($carrot, 20%);
+    }
+    
+    &:active {
+      color: #5faee3;
+    }
+}
+
+pre {
+    font-size: 1.1em;
+    background: $grey-darker;
+    color: $clouds;
+    word-break: break-all; /* webkit */ 
+    white-space: pre;
+    white-space: -moz-pre-wrap; /* fennec */
+    white-space: pre-wrap;
+    white-space: pre\9; /* IE7+ */
+}
+
+// Demo Styles.
+.fullscreen {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-color: lighten($grey-darker, 30%);
+    transition: all 0.5s;
+}
+.push-up {
+    margin-bottom: 20px;
+}
+.push-down {
+    margin-top: 20px;
+}
+.row.push-down {
+    margin-top: 60px;
+}
+.down {
+    margin-top: 20px;
+}
+h2 .push-up {
+    margin-bottom: 50px;
+}
+.col-sm-3, .col-sm-4 {
+    margin-bottom: 20px;
+}
+footer {
+    background: darken($grey-dark, 25%);
+    padding: 5px 0;
+    border-top: 3px solid $grey-darker;
+    color: $clouds;
+}

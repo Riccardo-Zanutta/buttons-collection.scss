@@ -1,0 +1,24 @@
+/* Buttons */
+
+// Button colors.
+$button-primary-color:        #fff !default;
+$btn-primary-bg:              #0074d9 !default;
+$btn-primary-border:          darken($btn-primary-bg, 5%) !default;
+
+// Base Button
+@include button;
+
+// Themes
+@include buttonFlat($bg-color: #2c3e50);
+@include buttonGhost;
+@include buttonGhostLight;
+@include button3d;
+@include blockbreak;
+
+// Sizes
+.btn-s { font-size: 12px; }
+.btn-m { font-size: 18px; }
+.btn-l { font-size: 20px; }
+
+// Border radius.
+.radius {border-radius: .3em;}

@@ -1,0 +1,156 @@
+// Button mixins
+@mixin button($color: $button-primary-color, $bg-color: $btn-primary-bg, $class: "") {
+    .btn#{$class} { 
+    font-family: $font-family-sans-serif;
+    display: inline-block;
+    letter-spacing: .15em;
+    margin-bottom: 1.5em;
+    padding: 1em 0.75em;
+    text-decoration: none;
+    background-image: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color;
+    background-color: $bg-color;
+    transition: all .3s;
+    
+        &:link,
+        &:visited {
+            @extend .btn#{$class};
+        }
+
+        &:hover, 
+        &:focus { 
+            text-decoration: none;
+            background-color: darken($bg-color, 5%);
+        }
+        &:active {  
+            background-color: lighten($bg-color, 5%);
+        }
+    }
+}
+@mixin buttonFlat($color: #fff, $bg-color: #0074d9, $class: "") {
+    .btn-flat#{$class} { 
+        position: relative;
+        color: $color;
+        background-color: $bg-color;
+        box-shadow: 0px 4px darken($bg-color, 10%);
+    
+        &:link,
+        &:visited {
+            @extend .btn-flat#{$class};
+        }
+        &:hover, &:focus { 
+            text-decoration: none;
+            background-color: darken($bg-color, 5%);
+            box-shadow: 0px 4px darken($bg-color, 20%);
+        }
+        &:active {  
+            top: 3px;
+            outline: 0;
+            background-image: none;
+        }
+    }
+}
+@mixin buttonGhost($border-color: #555, $color: #fff, $class: "") {
+    .btn-ghost#{$class} { 
+    border: 2px solid $border-color;
+    font-family: $font-family-sans-serif;
+    margin-bottom: .5em;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    color: $border-color;
+    
+        &:link, 
+        &:visited {
+            @extend .btn-ghost#{$class};
+        }
+
+        &:hover, &:focus { 
+            background-color: darken($border-color, 10%);
+            border-color: darken($border-color, 10%);
+            color: $color;
+            transition: border-color .3s, color .3s, background-color .3s;
+        }
+        &:active { 
+            background-color: darken($border-color, 18%);
+            border-color: darken($border-color, 18%);
+            color: $color;
+            transition: background-color .1s, color .1s, border .1s;
+        }
+    }
+}
+@mixin buttonGhostLight {
+    .btn-ghost-light { 
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    font-family: $font-family-sans-serif;
+    margin-bottom: .5em;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.7);
+    
+        &:link, 
+        &:visited {
+            @extend .btn-ghost-light;
+        }
+
+        &:hover, &:focus { 
+            border-color: #fff;
+            color: #383838;
+            background-color: #fff;
+        }
+        &:active { 
+            background-color: darken(#fff, 8%);
+            border-color: darken(#fff, 8%);
+            color: #383838;
+        }
+    }
+}
+@mixin button3d($class: "", $color: $btn-primary-bg) {
+    .btn-3d#{$class} {
+        box-shadow: 4px 4px 0px lighten($color, 30%);
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+        &:hover {
+            background: darken($color, 5%);
+        }
+
+        &:active {
+            top: 4px;
+            left: 4px;
+            box-shadow: 0px 0px 0px lighten($btn-primary-bg, 30%)
+        }
+    }
+}
+@mixin blockbreak ($class: "", $class2: -flat, $class3: -dark, $class4: -light) {
+    @media only screen and (max-width: 500px) {
+        .btn#{$class} {
+            display: block;
+        }
+    }
+}
+// Media Queries Mixin.
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $point == medium {
+    @media only screen and (min-width: 992px) { @content; }
+  }
+  @else if $point == large {
+    @media only screen and (min-width: 1200px)  { @content; }
+  }
+  @else if $point == tel {
+    @media only screen and (max-width: 540px) { @content }
+  }
+  @else if $point == 1300 {
+    @media (max-width: 1300px) { @content; }
+  }
+  @else if $point == 715 {
+    @media (max-width: 715px) { @content; }
+  }
+}
+// @include breakpoint(large) { @content }
