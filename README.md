@@ -107,8 +107,11 @@ In the mixins file you can find:
 }
 ```
 
-You can change the breakpoint in the **mixins.scss** file
+* You can change the breakpoint in the **mixins.scss** file;
+* You can include only the theme you want to avoid bloat of code;
 
 :warning: I'm using [PrePros App for Windows](http://alphapixels.com/prepros/) to compile and autoprefix SASS. Consider to use that or a library such as [Bourbon](http://bourbon.io).
+
+**I'm going to add more and more themes**. So feel free to fork this repo, use the code for **personal and commercial** uses, extend its functionality and make a pull request :)
 
 
