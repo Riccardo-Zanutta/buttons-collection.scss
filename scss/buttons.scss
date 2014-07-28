@@ -9,11 +9,17 @@ $btn-primary-border:    darken($base-button-bg, 5%) !default;
 // Base Button
 @include button;
 
+
 // Themes
-@include button_flat($bg: #2c3e50);
+@include button;
+@include button($class: -white, $bg: white, $color: $grey-darker);
+@include button-flat;
+@include button-flat($class: -red, $bg: $red);
 @include button_ghost;
+@include button_ghost($class: -green, $border-color: $emerald);
 @include button_ghost_light;
 @include button_3d;
+@include button_3d($class: -darkblue, $bg: $dark-blue);
 
 .btn, .btn-flat, .btn-ghost, .btn-ghost-light, .btn-3d {
   @include blockbreak;
