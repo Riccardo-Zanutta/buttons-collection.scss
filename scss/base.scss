@@ -105,7 +105,13 @@ h2 .push-up {
 }
 @media only screen and (max-width: 601px) {
     h1.gigantic {
-        font-size: 60px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1.gigantic {
+        font-size: 30px;
     }
 }
 

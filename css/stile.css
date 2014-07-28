@@ -155,7 +155,12 @@ h2 .push-up {
 
 @media only screen and (max-width: 601px) {
   h1.gigantic {
-    font-size: 60px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1.gigantic {
+    font-size: 30px;
   }
 }
 #ribbon {
@@ -269,7 +274,7 @@ h2 .push-up {
   box-shadow: 0px 0px 0px #73beff;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 590px) {
   .btn, .btn:link, .btn:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited {
     display: block;
     width: 100%;

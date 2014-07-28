@@ -175,7 +175,7 @@
     @media only screen and (min-width: 1200px)  { @content; }
   }
   @else if $point == tel {
-    @media only screen and (max-width: 540px) { @content }
+    @media only screen and (max-width: 590px) { @content }
   }
   @else if $point == 1300 {
     @media (max-width: 1300px) { @content; }
