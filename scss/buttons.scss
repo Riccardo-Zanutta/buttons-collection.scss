@@ -21,7 +21,7 @@ $btn-primary-border:    darken($base-button-bg, 5%) !default;
 @include button_3d;
 @include button_3d($class: -darkblue, $bg: $dark-blue);
 
-.btn, .btn-flat, .btn-ghost, .btn-ghost-light, .btn-3d {
+.btn, .btn-white, .btn-flat, .btn-flat-red, .btn-ghost, .btn-ghost-light, .btn-ghost-green, .btn-3d, .btn-3d-darkblue {
   @include blockbreak;
 }
 

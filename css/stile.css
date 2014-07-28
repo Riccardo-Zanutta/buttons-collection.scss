@@ -361,7 +361,7 @@ h2 .push-up {
 }
 
 @media only screen and (max-width: 590px) {
-  .btn, .btn:link, .btn:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited {
+  .btn, .btn:link, .btn:visited, .btn-white, .btn-white:link, .btn-white:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-flat-red, .btn-flat-red:link, .btn-flat-red:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-ghost-green, .btn-ghost-green:link, .btn-ghost-green:visited, .btn-3d, .btn-3d:link, .btn-3d:visited, .btn-3d-darkblue, .btn-3d-darkblue:link, .btn-3d-darkblue:visited {
     display: block;
     width: 100%;
   }
