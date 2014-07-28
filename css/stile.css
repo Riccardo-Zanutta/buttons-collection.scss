@@ -187,6 +187,7 @@ h2 .push-up {
   color: white;
   background-color: #0074d9;
   margin-bottom: 1.5em;
+  -webkit-tap-highlight-color: transparent;
   transition: background-color .3s;
 }
 .btn:hover, .btn:focus {
@@ -201,6 +202,7 @@ h2 .push-up {
   color: white;
   background-color: #0074d9;
   margin-bottom: 1.5em;
+  -webkit-tap-highlight-color: transparent;
   transition: background-color .3s;
 }
 .btn:hover, .btn:focus {
@@ -215,6 +217,7 @@ h2 .push-up {
   color: #434a54;
   background-color: white;
   margin-bottom: 1.5em;
+  -webkit-tap-highlight-color: transparent;
   transition: background-color .3s;
 }
 .btn-white:hover, .btn-white:focus {
@@ -231,6 +234,7 @@ h2 .push-up {
   background-color: #0074d9;
   box-shadow: 0px 4px #0059a6;
   margin-bottom: 1.5em;
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-flat:hover, .btn-flat:focus {
@@ -250,6 +254,7 @@ h2 .push-up {
   background-color: #e74c3c;
   box-shadow: 0px 4px #d62c1a;
   margin-bottom: 1.5em;
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-flat-red:hover, .btn-flat-red:focus {
@@ -269,6 +274,7 @@ h2 .push-up {
   margin-bottom: .5em;
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-ghost:hover, .btn-ghost:focus {
@@ -290,6 +296,7 @@ h2 .push-up {
   margin-bottom: .5em;
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-ghost-green:hover, .btn-ghost-green:focus {
@@ -311,6 +318,7 @@ h2 .push-up {
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.7);
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-ghost-light:hover, .btn-ghost-light:focus {
@@ -330,6 +338,7 @@ h2 .push-up {
   position: relative;
   top: 0px;
   left: 0px;
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-3d:hover, .btn-3d:focus {
@@ -348,6 +357,7 @@ h2 .push-up {
   position: relative;
   top: 0px;
   left: 0px;
+  -webkit-tap-highlight-color: transparent;
   transition: all .3s;
 }
 .btn-3d-darkblue:hover, .btn-3d-darkblue:focus {
