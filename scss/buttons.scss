@@ -1,19 +1,23 @@
 /* Buttons */
 
 // Button colors.
-$button-primary-color:        #fff !default;
-$btn-primary-bg:              #0074d9 !default;
-$btn-primary-border:          darken($btn-primary-bg, 5%) !default;
+$base-button-color:     #fff !default;
+$base-button-bg:        #0074d9 !default;
+$btn-primary-border:    darken($base-button-bg, 5%) !default;
+
 
 // Base Button
 @include button;
 
 // Themes
-@include buttonFlat($bg-color: #2c3e50);
-@include buttonGhost;
-@include buttonGhostLight;
-@include button3d;
-@include blockbreak;
+@include button_flat($bg: #2c3e50);
+@include button_ghost;
+@include button_ghost_light;
+@include button_3d;
+
+.btn, .btn-flat, .btn-ghost, .btn-ghost-light, .btn-3d {
+  @include blockbreak;
+}
 
 // Sizes
 .btn-s { font-size: 12px; }

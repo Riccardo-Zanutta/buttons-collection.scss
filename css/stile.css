@@ -1,3 +1,16 @@
+.btn, .btn:link, .btn:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .15em;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -49,7 +62,7 @@ body {
 body {
   font-family: "Lato", helvetica, arial, sans-serif;
   font-size: 16px;
-  line-height: 1.42857;
+  line-height: 1.5;
   color: #2c3138;
   background-color: transparent;
 }
@@ -145,21 +158,32 @@ h2 .push-up {
     font-size: 60px;
   }
 }
+#ribbon {
+  color: transparent;
+  display: block;
+  height: 149px;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  text-decoration: none solid transparent;
+  text-rendering: optimizelegibility;
+  top: 0px;
+  width: 149px;
+  z-index: 10;
+  perspective-origin: 74.5px 74.5px;
+  transform-origin: 74.5px 74.5px;
+  background: transparent url(https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67) no-repeat scroll 0% 0%/auto padding-box border-box;
+  border: 0px none transparent;
+  font: normal normal normal 0px/0px a;
+  outline: transparent none 0px;
+}
+
 /* Buttons */
 .btn, .btn:link, .btn:visited {
-  font-family: "Lato", helvetica, arial, sans-serif;
-  display: inline-block;
-  letter-spacing: .15em;
-  margin-bottom: 1.5em;
-  padding: 1em 0.75em;
-  text-decoration: none;
-  background-image: none;
-  white-space: nowrap;
-  text-transform: uppercase;
-  text-align: center;
   color: white;
   background-color: #0074d9;
-  transition: all .3s;
+  margin-bottom: 1.5em;
+  transition: background-color .3s;
 }
 .btn:hover, .btn:focus {
   text-decoration: none;
@@ -174,10 +198,12 @@ h2 .push-up {
   color: white;
   background-color: #2c3e50;
   box-shadow: 0px 4px #1a242f;
+  margin-bottom: 1.5em;
+  transition: all .3s;
 }
 .btn-flat:hover, .btn-flat:focus {
   text-decoration: none;
-  background-color: #233140;
+  background-color: #1a242f;
   box-shadow: 0px 4px #080b0e;
 }
 .btn-flat:active {
@@ -187,12 +213,12 @@ h2 .push-up {
 }
 
 .btn-ghost, .btn-ghost:link, .btn-ghost:visited {
+  color: #555555;
   border: 2px solid #555555;
-  font-family: "Lato", helvetica, arial, sans-serif;
   margin-bottom: .5em;
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
-  color: #555555;
+  transition: all .3s;
 }
 .btn-ghost:hover, .btn-ghost:focus {
   background-color: #3b3b3b;
@@ -209,11 +235,11 @@ h2 .push-up {
 
 .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited {
   border: 2px solid rgba(255, 255, 255, 0.7);
-  font-family: "Lato", helvetica, arial, sans-serif;
   margin-bottom: .5em;
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.7);
+  transition: all .3s;
 }
 .btn-ghost-light:hover, .btn-ghost-light:focus {
   border-color: #fff;
@@ -222,18 +248,20 @@ h2 .push-up {
 }
 .btn-ghost-light:active {
   background-color: #ebebeb;
-  border-color: #ebebeb;
   color: #383838;
 }
 
-.btn-3d {
+.btn-3d, .btn-3d:link, .btn-3d:visited {
+  background-color: #0074d9;
+  color: white;
   box-shadow: 4px 4px 0px #73beff;
   position: relative;
   top: 0px;
   left: 0px;
+  transition: all .3s;
 }
-.btn-3d:hover {
-  background: #0066c0;
+.btn-3d:hover, .btn-3d:focus {
+  background: #0059a6;
 }
 .btn-3d:active {
   top: 4px;
@@ -241,11 +269,13 @@ h2 .push-up {
   box-shadow: 0px 0px 0px #73beff;
 }
 
-@media only screen and (max-width: 500px) {
-  .btn, .btn:link, .btn:visited {
+@media only screen and (max-width: 540px) {
+  .btn, .btn:link, .btn:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited {
     display: block;
+    width: 100%;
   }
 }
+
 .btn-s {
   font-size: 12px;
 }

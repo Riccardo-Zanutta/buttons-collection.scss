@@ -108,3 +108,28 @@ h2 .push-up {
         font-size: 60px;
     }
 }
+
+
+// Github Ribbon 
+
+#ribbon {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    height: 149px;
+    position: fixed;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgba(0, 0, 0, 0);
+    text-rendering: optimizelegibility;
+    top: 0px;
+    width: 149px;
+    z-index: 10;
+    perspective-origin: 74.5px 74.5px;
+    transform-origin: 74.5px 74.5px;
+    background: rgba(0, 0, 0, 0) url(https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67) no-repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgba(0, 0, 0, 0);
+    font: normal normal normal 0px/0px a;
+    outline: rgba(0, 0, 0, 0) none 0px;
+}
+
+
