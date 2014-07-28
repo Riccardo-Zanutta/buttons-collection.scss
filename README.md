@@ -1,7 +1,9 @@
 buttons-collection.scss
 =======================
 
-Simply an open source collection of buttons made with SASS:  [Demo](http://riccardo-zanutta.github.io/buttons-collection.scss/)
+Simply an open source collection of buttons made with SASS:  
+* [Demo](http://riccardo-zanutta.github.io/buttons-collection.scss/);
+* [Sache.in link](http://www.sache.in/search?query=button-collection.scss).
 
 Getting started
 ===
