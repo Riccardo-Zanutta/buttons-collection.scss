@@ -1,6 +1,5 @@
 {
   "name": "button-collection.scss",
   "description": "A collection of mixins to create buttons. Made with SASS.",
-  "tags": ["buttons, SASS, UI"],
-  "website": "http://riccardo-zanutta.github.io/buttons-collection.scss/
+  "tags": ["buttons, SASS, UI"]
 }
