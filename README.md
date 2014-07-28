@@ -1,7 +1,7 @@
 buttons-collection.scss
 =======================
 
-Simply an open source collection of buttons made with SASS.
+Simply an open source collection of buttons made with SASS:  [Demo](http://riccardo-zanutta.github.io/buttons-collection.scss/)
 
 Getting started
 ===
