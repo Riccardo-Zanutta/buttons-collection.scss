@@ -103,18 +103,6 @@ h2 .push-up {
 .col-sm-3, .col-sm-4 {
     margin-bottom: 20px;
 }
-@media only screen and (max-width: 601px) {
-    h1.gigantic {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    h1.gigantic {
-        font-size: 30px;
-    }
-}
-
 
 // Github Ribbon 
 
@@ -136,6 +124,22 @@ h2 .push-up {
     border: 0px none rgba(0, 0, 0, 0);
     font: normal normal normal 0px/0px a;
     outline: rgba(0, 0, 0, 0) none 0px;
+}
+
+@media only screen and (max-width: 601px) {
+  h1.gigantic {
+    font-size: 40px;
+  }
+  #ribbon {
+    display: none;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+    h1.gigantic {
+        font-size: 30px;
+    }
 }
 
 

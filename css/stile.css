@@ -153,16 +153,6 @@ h2 .push-up {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 601px) {
-  h1.gigantic {
-    font-size: 40px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  h1.gigantic {
-    font-size: 30px;
-  }
-}
 #ribbon {
   color: transparent;
   display: block;
@@ -183,6 +173,20 @@ h2 .push-up {
   outline: transparent none 0px;
 }
 
+@media only screen and (max-width: 601px) {
+  h1.gigantic {
+    font-size: 40px;
+  }
+
+  #ribbon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1.gigantic {
+    font-size: 30px;
+  }
+}
 /* Buttons */
 .btn, .btn:link, .btn:visited {
   color: white;
