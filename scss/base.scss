@@ -34,7 +34,7 @@ body {
 // Typography
 
 .gigantic {
-    font-size: 100px;
+    font-size: 65px;
     line-height: 1.09;
     letter-spacing: -2px;
     margin-bottom: 10px;
@@ -126,20 +126,13 @@ h2 .push-up {
     outline: rgba(0, 0, 0, 0) none 0px;
 }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 750px) {
   h1.gigantic {
     font-size: 40px;
   }
   #ribbon {
     display: none;
   }
-  
-}
-
-@media only screen and (max-width: 400px) {
-    h1.gigantic {
-        font-size: 30px;
-    }
 }
 
 
