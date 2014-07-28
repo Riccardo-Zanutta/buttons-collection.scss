@@ -48,6 +48,8 @@ $btn-primary-border:    darken($base-button-bg, 5%) !default;
 
 So if you want to create a new button, or change the color, ovverride or create a new button class, simply @include your desired mixin in the **buttons.scss** file.
 
+Note that there are some helper classes to increase/decrease the size of the buttons and to make them rounded.
+
 Examples
 --------
 
