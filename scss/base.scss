@@ -41,7 +41,6 @@ body {
 }
 
 a {
-    color: darken($carrot, 10%);
     text-decoration: none;
     
     &:link, &:visited {
@@ -50,12 +49,8 @@ a {
     
     &:hover, &:focus {
       text-decoration: none;
-      color: darken($carrot, 20%);
     }
     
-    &:active {
-      color: #5faee3;
-    }
 }
 
 pre {
@@ -133,6 +128,13 @@ h2 .push-up {
   #ribbon {
     display: none;
   }
+}
+
+a i.fa {
+    color: $carrot;
+    &:hover {
+        color: darken($carrot, 15%);
+    }
 }
 
 

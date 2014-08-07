@@ -87,15 +87,10 @@ body {
 }
 
 a, a:link, a:visited {
-  color: #bf6516;
   text-decoration: none;
 }
 a:hover, a:focus {
   text-decoration: none;
-  color: #924d10;
-}
-a:active {
-  color: #5faee3;
 }
 
 pre {
@@ -182,6 +177,13 @@ h2 .push-up {
     display: none;
   }
 }
+a i.fa {
+  color: #e67e22;
+}
+a i.fa:hover {
+  color: #a85913;
+}
+
 /* Buttons */
 .btn, .btn:link, .btn:visited {
   color: white;
