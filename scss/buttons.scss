@@ -6,10 +6,6 @@ $base-button-bg:        #0074d9 !default;
 $btn-primary-border:    darken($base-button-bg, 5%) !default;
 
 
-// Base Button
-@include button;
-
-
 // Themes
 @include button;
 @include button($class: -white, $bg: white, $color: $grey-darker);

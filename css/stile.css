@@ -198,21 +198,6 @@ h2 .push-up {
   background-color: #0082f3;
 }
 
-.btn, .btn:link, .btn:visited {
-  color: white;
-  background-color: #0074d9;
-  margin-bottom: 1.5em;
-  -webkit-tap-highlight-color: transparent;
-  transition: background-color .3s;
-}
-.btn:hover, .btn:focus {
-  text-decoration: none;
-  background-color: #0066c0;
-}
-.btn:active {
-  background-color: #0082f3;
-}
-
 .btn-white, .btn-white:link, .btn-white:visited {
   color: #434a54;
   background-color: white;
