@@ -1,19 +1,22 @@
 .btn, .btn:link, .btn:visited, .btn-white, .btn-white:link, .btn-white:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-flat-red, .btn-flat-red:link, .btn-flat-red:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-green, .btn-ghost-green:link, .btn-ghost-green:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited, .btn-3d-darkblue, .btn-3d-darkblue:link, .btn-3d-darkblue:visited {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   letter-spacing: .15em;
   display: inline-block;
   font-weight: bold;
   line-height: 1;
   padding: .75em 1em;
   text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -47,16 +50,13 @@ summary {
 }
 
 /* Base */
-html,
-body {
+html, body {
   width: 100%;
   height: 100%;
   max-width: 2880px;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
-  text-rendering: optimizeLegibility !important;
 }
 
 body {
@@ -67,15 +67,21 @@ body {
   background-color: transparent;
 }
 
+::-moz-selection {
+  background: #b3d4fc;
+  color: #fff;
+  text-shadow: none;
+}
+
 ::selection {
   background: #b3d4fc;
-  color: white;
+  color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
   background: #b3d4fc;
-  color: white;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -112,12 +118,10 @@ pre {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover;
-  background-color: #8c96a4;
-  transition: all 0.5s;
+  background: -webkit-linear-gradient(0deg, #ECE9E6 10%, #FFFFFF 90%);
+  background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 
 .push-up {
@@ -160,8 +164,11 @@ h2 .push-up {
   top: 0px;
   width: 149px;
   z-index: 10;
-  perspective-origin: 74.5px 74.5px;
-  transform-origin: 74.5px 74.5px;
+  -webkit-perspective-origin: 74.5px 74.5px;
+          perspective-origin: 74.5px 74.5px;
+  -webkit-transform-origin: 74.5px 74.5px;
+      -ms-transform-origin: 74.5px 74.5px;
+          transform-origin: 74.5px 74.5px;
   background: transparent url(https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67) no-repeat scroll 0% 0%/auto padding-box border-box;
   border: 0px none transparent;
   font: normal normal normal 0px/0px a;
@@ -186,11 +193,12 @@ a i.fa:hover {
 
 /* Buttons */
 .btn, .btn:link, .btn:visited {
-  color: white;
+  color: #fff;
   background-color: #0074d9;
   margin-bottom: 1.5em;
   -webkit-tap-highlight-color: transparent;
-  transition: background-color .3s;
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
 }
 .btn:hover, .btn:focus {
   text-decoration: none;
@@ -205,7 +213,8 @@ a i.fa:hover {
   background-color: white;
   margin-bottom: 1.5em;
   -webkit-tap-highlight-color: transparent;
-  transition: background-color .3s;
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
 }
 .btn-white:hover, .btn-white:focus {
   text-decoration: none;
@@ -217,12 +226,13 @@ a i.fa:hover {
 
 .btn-flat, .btn-flat:link, .btn-flat:visited {
   position: relative;
-  color: white;
+  color: #fff;
   background-color: #0074d9;
   box-shadow: 0px 4px #0059a6;
   margin-bottom: 1.5em;
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-flat:hover, .btn-flat:focus {
   text-decoration: none;
@@ -237,12 +247,13 @@ a i.fa:hover {
 
 .btn-flat-red, .btn-flat-red:link, .btn-flat-red:visited {
   position: relative;
-  color: white;
+  color: #fff;
   background-color: #e74c3c;
   box-shadow: 0px 4px #d62c1a;
   margin-bottom: 1.5em;
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-flat-red:hover, .btn-flat-red:focus {
   text-decoration: none;
@@ -256,25 +267,28 @@ a i.fa:hover {
 }
 
 .btn-ghost, .btn-ghost:link, .btn-ghost:visited {
-  color: #555555;
-  border: 2px solid #555555;
+  color: #555;
+  border: 2px solid #555;
   margin-bottom: .5em;
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-ghost:hover, .btn-ghost:focus {
   background-color: #3b3b3b;
   border-color: #3b3b3b;
-  color: white;
-  transition: border-color .3s, color .3s, background-color .3s;
+  color: #fff;
+  -webkit-transition: border-color .3s, color .3s, background-color .3s;
+          transition: border-color .3s, color .3s, background-color .3s;
 }
 .btn-ghost:active {
   background-color: #272727;
   border-color: #272727;
-  color: white;
-  transition: background-color .1s, color .1s, border .1s;
+  color: #fff;
+  -webkit-transition: background-color .1s, color .1s, border .1s;
+          transition: background-color .1s, color .1s, border .1s;
 }
 
 .btn-ghost-green, .btn-ghost-green:link, .btn-ghost-green:visited {
@@ -284,19 +298,22 @@ a i.fa:hover {
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-ghost-green:hover, .btn-ghost-green:focus {
   background-color: #25a25a;
   border-color: #25a25a;
-  color: white;
-  transition: border-color .3s, color .3s, background-color .3s;
+  color: #fff;
+  -webkit-transition: border-color .3s, color .3s, background-color .3s;
+          transition: border-color .3s, color .3s, background-color .3s;
 }
 .btn-ghost-green:active {
   background-color: #1d8148;
   border-color: #1d8148;
-  color: white;
-  transition: background-color .1s, color .1s, border .1s;
+  color: #fff;
+  -webkit-transition: background-color .1s, color .1s, border .1s;
+          transition: background-color .1s, color .1s, border .1s;
 }
 
 .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited {
@@ -306,7 +323,8 @@ a i.fa:hover {
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.7);
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
 }
 .btn-ghost-light:hover, .btn-ghost-light:focus {
   border-color: #fff;
@@ -320,13 +338,14 @@ a i.fa:hover {
 
 .btn-3d, .btn-3d:link, .btn-3d:visited {
   background-color: #0074d9;
-  color: white;
+  color: #fff;
   box-shadow: 4px 4px 0px #73beff;
   position: relative;
   top: 0px;
   left: 0px;
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-3d:hover, .btn-3d:focus {
   background: #0059a6;
@@ -339,13 +358,14 @@ a i.fa:hover {
 
 .btn-3d-darkblue, .btn-3d-darkblue:link, .btn-3d-darkblue:visited {
   background-color: #34495e;
-  color: white;
+  color: #fff;
   box-shadow: 4px 4px 0px #7795b4;
   position: relative;
   top: 0px;
   left: 0px;
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-3d-darkblue:hover, .btn-3d-darkblue:focus {
   background: #222f3d;
@@ -356,7 +376,7 @@ a i.fa:hover {
   box-shadow: 0px 0px 0px #7795b4;
 }
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 640px) {
   .btn, .btn:link, .btn:visited, .btn-white, .btn-white:link, .btn-white:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-flat-red, .btn-flat-red:link, .btn-flat-red:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-ghost-green, .btn-ghost-green:link, .btn-ghost-green:visited, .btn-3d, .btn-3d:link, .btn-3d:visited, .btn-3d-darkblue, .btn-3d-darkblue:link, .btn-3d-darkblue:visited {
     display: block;
     width: 100%;

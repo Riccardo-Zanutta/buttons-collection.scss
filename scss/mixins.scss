@@ -1,82 +1,77 @@
-// Button mixins
-// Base button placeholder
-
 %button {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   letter-spacing: .15em;
   display: inline-block;
   font-weight: bold;
   line-height: 1;
   padding: .75em 1em;
   text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
 }
 
-// Mixins for buttons: https://github.com/Riccardo-Zanutta/buttons-collection.scss
-// 
 // Base Theme
-
 @mixin button($color: $base-button-color, $bg: $base-button-bg, $class: "") {
-    .btn#{$class} {
-      @extend %button;
-      color: $color;
-      background-color: $bg; 
-      margin-bottom: 1.5em;
-      -webkit-tap-highlight-color: transparent;
-      transition: background-color .3s;
-    
-        &:link,
-        &:visited {
-            @extend .btn#{$class};
-        }
+  .btn#{$class} {
+    @extend %button;
+    color: $color;
+    background-color: $bg;
+    margin-bottom: 1.5em;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color .3s;
 
-        &:hover, 
-        &:focus { 
-            text-decoration: none;
-            background-color: darken($bg, 5%);
-        }
-        &:active {  
-            background-color: lighten($bg, 5%);
-        }
+    &:link, &:visited {
+      @extend .btn#{$class};
     }
+
+    &:hover, &:focus {
+      text-decoration: none;
+      background-color: darken($bg, 5%);
+    }
+    &:active {
+      background-color: lighten($bg, 5%);
+    }
+  }
 }
 
 // Flat theme
-
 @mixin button_flat($color: #fff, $bg: #0074d9, $class: "") {
-    .btn-flat#{$class} {
-        @extend %button; 
-        position: relative;
-        color: $color;
-        background-color: $bg;
-        box-shadow: 0px 4px darken($bg, 10%);
-        margin-bottom: 1.5em;
-      -webkit-tap-highlight-color: transparent;
-        transition: all .3s;
-    
-        &:link,
-        &:visited {
-            @extend .btn-flat#{$class};
-        }
-        &:hover, &:focus { 
-            text-decoration: none;
-            background-color: darken($bg, 10%);
-            box-shadow: 0px 4px darken($bg, 20%);
-        }
-        &:active {  
-            top: 3px;
-            outline: 0;
-            background-image: none;
-        }
+  .btn-flat#{$class} {
+    @extend %button;
+    position: relative;
+    color: $color;
+    background-color: $bg;
+    box-shadow: 0px 4px darken($bg, 10%);
+    margin-bottom: 1.5em;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .3s;
+
+    &:link, &:visited {
+      @extend .btn-flat#{$class};
     }
+    &:hover, &:focus {
+      text-decoration: none;
+      background-color: darken($bg, 10%);
+      box-shadow: 0px 4px darken($bg, 20%);
+    }
+    &:active {
+      top: 3px;
+      outline: 0;
+      background-image: none;
+    }
+  }
 }
 
 // Ghost theme
 
 @mixin button_ghost($border-color: #555, $color: #fff, $class: "") {
-    .btn-ghost#{$class} { 
+    .btn-ghost#{$class} {
       @extend %button;
       color: $border-color;
       border: 2px solid $border-color;
@@ -85,20 +80,19 @@
       background-color: rgba(255, 255, 255, 0);
       -webkit-tap-highlight-color: transparent;
       transition: all .3s;
-      
-      &:link, 
-      &:visited {
+
+      &:link, &:visited {
         @extend .btn-ghost#{$class};
       }
 
-      &:hover, &:focus { 
+      &:hover, &:focus {
         background-color: darken($border-color, 10%);
         border-color: darken($border-color, 10%);
         color: $color;
         transition: border-color .3s, color .3s, background-color .3s;
       }
 
-      &:active { 
+      &:active {
         background-color: darken($border-color, 18%);
         border-color: darken($border-color, 18%);
         color: $color;
@@ -108,63 +102,61 @@
 }
 
 // Ghost light theme
-
 @mixin button_ghost_light {
-    .btn-ghost-light {
-      @extend %button;
-      border: 2px solid rgba(255, 255, 255, 0.7);
-      margin-bottom: .5em;
-      background-color: rgb(255, 255, 255);
-      background-color: rgba(255, 255, 255, 0);
-      color: rgba(255, 255, 255, 0.7);
-      -webkit-tap-highlight-color: transparent;
-      transition: all .3s;
-    
-        &:link, 
-        &:visited {
-            @extend .btn-ghost-light;
-        }
+  .btn-ghost-light {
+    @extend %button;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: .5em;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-tap-highlight-color: transparent;
+    transition: all .3s ease;
 
-        &:hover, &:focus { 
-            border-color: #fff;
-            color: #383838;
-            background-color: #fff;
-        }
-        &:active { 
-            background-color: darken(#fff, 8%);
-            color: #383838;
-        }
+    &:link, &:visited {
+      @extend .btn-ghost-light;
     }
+
+    &:hover, &:focus {
+      border-color: #fff;
+      color: #383838;
+      background-color: #fff;
+    }
+    &:active {
+      background-color: darken(#fff, 8%);
+      color: #383838;
+    }
+  }
 }
 
 // 3D Theme
 
 @mixin button_3d($color: $base-button-color, $bg: $base-button-bg, $class: "") {
-    .btn-3d#{$class} {
-      @extend %button;
-      background-color: $bg;
-      color: $color;
-      box-shadow: 4px 4px 0px lighten($bg, 30%);
-      position: relative;
-      top: 0px;
-      left: 0px;
-      -webkit-tap-highlight-color: transparent;
-      transition: all .3s;
+  .btn-3d#{$class} {
+    @extend %button;
+    background-color: $bg;
+    color: $color;
+    box-shadow: 4px 4px 0px lighten($bg, 30%);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .3s;
 
-      &:link, &:visited {
-        @extend .btn-3d#{$class};
-      }
-
-      &:hover, &:focus {
-        background: darken($bg, 10%);
-      }
-
-      &:active {
-        top: 4px;
-        left: 4px;
-        box-shadow: 0px 0px 0px lighten($bg, 30%)
-      }
+    &:link, &:visited {
+      @extend .btn-3d#{$class};
     }
+
+    &:hover, &:focus {
+      background: darken($bg, 10%);
+    }
+
+    &:active {
+      top: 4px;
+      left: 4px;
+      box-shadow: 0px 0px 0px lighten($bg, 30%)
+    }
+  }
 }
 
 // Media Queries Mixin.
@@ -179,7 +171,7 @@
     @media only screen and (min-width: 1200px)  { @content; }
   }
   @else if $point == tel {
-    @media only screen and (max-width: 590px) { @content }
+    @media only screen and (max-width: 640px) { @content }
   }
   @else if $point == 1300 {
     @media (max-width: 1300px) { @content; }

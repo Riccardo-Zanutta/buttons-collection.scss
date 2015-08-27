@@ -1,43 +1,40 @@
 /* Base */
-html,
-body {
-    width: 100%;
-    height: 100%;
-    max-width: 2880px;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important; 
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    text-rendering: optimizeLegibility !important;
+html, body {
+  width: 100%;
+  height: 100%;
+  max-width: 2880px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-    font-family: $font-family-sans-serif;
-    font-size: $font-size-base;
-    line-height: $line-height;
-    color: $text-color;
-    background-color: $body-bg;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: $line-height;
+  color: $text-color;
+  background-color: $body-bg;
 }
 
 // Selection colors
 
 ::selection {
-    background: $selection-bg;
-    color: $selection-color;
-    text-shadow: none;
+  background: $selection-bg;
+  color: $selection-color;
+  text-shadow: none;
 }
 ::-moz-selection {
-    background: $selection-bg;
-    color: $selection-color;
-    text-shadow: none;
+  background: $selection-bg;
+  color: $selection-color;
+  text-shadow: none;
 }
 
 // Typography
 
 .gigantic {
-    font-size: 65px;
-    line-height: 1.09;
-    letter-spacing: -2px;
-    margin-bottom: 10px;
+  font-size: 65px;
+  line-height: 1.09;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -66,59 +63,55 @@ pre {
 
 // Demo Styles.
 .fullscreen {
-    display: table;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background: url(../img/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    background-color: lighten($grey-darker, 30%);
-    transition: all 0.5s;
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+  transition: all 0.5s ease;
 }
 .push-up {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .push-down {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .row.push-down {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 .down {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 h2 .push-up {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .push-right {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .col-sm-3, .col-sm-4 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 // Github Ribbon 
 
 #ribbon {
-    color: rgba(0, 0, 0, 0);
-    display: block;
-    height: 149px;
-    position: absolute;
-    right: 0px;
-    text-align: center;
-    text-decoration: none solid rgba(0, 0, 0, 0);
-    text-rendering: optimizelegibility;
-    top: 0px;
-    width: 149px;
-    z-index: 10;
-    perspective-origin: 74.5px 74.5px;
-    transform-origin: 74.5px 74.5px;
-    background: rgba(0, 0, 0, 0) url(https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67) no-repeat scroll 0% 0% / auto padding-box border-box;
-    border: 0px none rgba(0, 0, 0, 0);
-    font: normal normal normal 0px/0px a;
-    outline: rgba(0, 0, 0, 0) none 0px;
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  height: 149px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  text-decoration: none solid rgba(0, 0, 0, 0);
+  text-rendering: optimizelegibility;
+  top: 0px;
+  width: 149px;
+  z-index: 10;
+  perspective-origin: 74.5px 74.5px;
+  transform-origin: 74.5px 74.5px;
+  background: rgba(0, 0, 0, 0) url(https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67) no-repeat scroll 0% 0% / auto padding-box border-box;
+  border: 0px none rgba(0, 0, 0, 0);
+  font: normal normal normal 0px/0px a;
+  outline: rgba(0, 0, 0, 0) none 0px;
 }
 
 @media only screen and (max-width: 750px) {
