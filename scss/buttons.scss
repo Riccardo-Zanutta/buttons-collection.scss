@@ -7,27 +7,17 @@ $btn-primary-border:    darken($base-button-bg, 5%) !default;
 
 
 /* Default Button */
-
 @include button;
 
 /* Flat Theme */
-
 @include button-flat;
 
 /* Ghost themes */
-
 @include button_ghost;
 @include button_ghost_light;
 
 /* 3d Theme */
-
 @include button_3d;
-
-/* Blockbreak */
-
-.btn, .btn-flat, .btn-ghost, .btn-ghost-light, .btn-3d {
-  @include blockbreak;
-}
 
 // Sizes
 .btn-s { font-size: 12px; }
@@ -35,4 +25,4 @@ $btn-primary-border:    darken($base-button-bg, 5%) !default;
 .btn-l { font-size: 20px; }
 
 // Border radius.
-.radius {border-radius: .3em;}
+.radius { border-radius: .3em; }

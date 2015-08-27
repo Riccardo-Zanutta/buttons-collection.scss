@@ -1,11 +1,16 @@
 .btn, .btn:link, .btn:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   letter-spacing: .15em;
   display: inline-block;
   font-weight: bold;
   line-height: 1;
   padding: .75em 1em;
   text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
@@ -14,11 +19,12 @@
 /* Buttons */
 /* Default Button */
 .btn, .btn:link, .btn:visited {
-  color: white;
+  color: #fff;
   background-color: #0074d9;
   margin-bottom: 1.5em;
   -webkit-tap-highlight-color: transparent;
-  transition: background-color .3s;
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
 }
 .btn:hover, .btn:focus {
   text-decoration: none;
@@ -31,12 +37,13 @@
 /* Flat Theme */
 .btn-flat, .btn-flat:link, .btn-flat:visited {
   position: relative;
-  color: white;
+  color: #fff;
   background-color: #0074d9;
   box-shadow: 0px 4px #0059a6;
   margin-bottom: 1.5em;
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-flat:hover, .btn-flat:focus {
   text-decoration: none;
@@ -51,25 +58,28 @@
 
 /* Ghost themes */
 .btn-ghost, .btn-ghost:link, .btn-ghost:visited {
-  color: #555555;
-  border: 2px solid #555555;
+  color: #555;
+  border: 2px solid #555;
   margin-bottom: .5em;
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-ghost:hover, .btn-ghost:focus {
   background-color: #3b3b3b;
   border-color: #3b3b3b;
-  color: white;
-  transition: border-color .3s, color .3s, background-color .3s;
+  color: #fff;
+  -webkit-transition: border-color .3s, color .3s, background-color .3s;
+          transition: border-color .3s, color .3s, background-color .3s;
 }
 .btn-ghost:active {
   background-color: #272727;
   border-color: #272727;
-  color: white;
-  transition: background-color .1s, color .1s, border .1s;
+  color: #fff;
+  -webkit-transition: background-color .1s, color .1s, border .1s;
+          transition: background-color .1s, color .1s, border .1s;
 }
 
 .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited {
@@ -79,7 +89,8 @@
   background-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0.7);
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease;
 }
 .btn-ghost-light:hover, .btn-ghost-light:focus {
   border-color: #fff;
@@ -94,13 +105,14 @@
 /* 3d Theme */
 .btn-3d, .btn-3d:link, .btn-3d:visited {
   background-color: #0074d9;
-  color: white;
+  color: #fff;
   box-shadow: 4px 4px 0px #73beff;
   position: relative;
   top: 0px;
   left: 0px;
   -webkit-tap-highlight-color: transparent;
-  transition: all .3s;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .btn-3d:hover, .btn-3d:focus {
   background: #0059a6;
@@ -109,14 +121,6 @@
   top: 4px;
   left: 4px;
   box-shadow: 0px 0px 0px #73beff;
-}
-
-/* Blockbreak */
-@media only screen and (max-width: 590px) {
-  .btn, .btn:link, .btn:visited, .btn-flat, .btn-flat:link, .btn-flat:visited, .btn-ghost, .btn-ghost:link, .btn-ghost:visited, .btn-ghost-light, .btn-ghost-light:link, .btn-ghost-light:visited, .btn-3d, .btn-3d:link, .btn-3d:visited {
-    display: block;
-    width: 100%;
-  }
 }
 
 .btn-s {
