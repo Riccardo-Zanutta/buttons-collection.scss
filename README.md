@@ -1,6 +1,8 @@
 buttons-collection.scss
 =======================
 
+<a href="https://www.youtube.com/watch?v=Sagg08DrO5U"><img src='http://img.shields.io/badge/gandalf-approved-61C6FF.svg'></a>
+
 Simply an open source collection of buttons made with SASS:  
 * [Demo](http://riccardo-zanutta.github.io/buttons-collection.scss/);
 * [Sache.in link](http://www.sache.in/search?query=button-collection.scss).
